@@ -1,5 +1,5 @@
 FROM node:11-alpine as build
-COPY app/ /builder/
+COPY react_app/ /builder/
 WORKDIR /builder/
 RUN npm install
 RUN npm run build
